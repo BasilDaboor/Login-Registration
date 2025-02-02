@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: self-start;
+        border: 2px solid black;
+        gap: 7px;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      label {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .btnContainer {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+      #registerBtn,
+      #loginPageBtn {
+        all: unset;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid transparent;
+        cursor: pointer;
+      }
+      #registerBtn {
+        background-color: rgba(0, 0, 255, 0.457);
+      }
+      #loginPageBtn {
+        background-color: rgba(0, 128, 0, 0.566);
+      }
+      #registerBtn:hover {
+        background-color: rgba(0, 0, 255, 0.224);
+      }
+      #loginPageBtn:hover {
+        background-color: rgba(0, 128, 0, 0.292);
+      }
+      #message {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="loginForm">
+      <label>
+        Email:
+        <input type="email" id="email" required />
+      </label>
+      <label>
+        Password:
+        <input type="password" id="password" required minlength="8" />
+      </label>
+      <div class="btnContainer">
+        <input type="submit" id="loginPageBtn" value="Login" />
+        <input type="button" id="registerBtn" value="Register" />
+      </div>
+      <label id="message"></label>
+    </form>
+    <script src="login.js"></script>
+  </body>
+</html>
