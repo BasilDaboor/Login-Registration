@@ -14,6 +14,7 @@ let loginPageBtn = document.getElementById("loginPageBtn")
 let registerForm = document.getElementById("registerForm")
 let message = document.getElementById("message")
 
+
 loginPageBtn.addEventListener("click",function(){
 window.location.href="loginPage.html"
 })
